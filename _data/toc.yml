@@ -1,5 +1,5 @@
-- title: "Setup"
-  url: "docs/setup"
+- title: "LLMops"
+  url: "docs/llmops"
   children:
     - title: Setting Variables
       url: "docs/setup/variables"

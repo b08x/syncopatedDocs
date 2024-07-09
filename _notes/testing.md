@@ -1,5 +1,4 @@
 ---
-layout: note
 title: Testing this
 ---
 

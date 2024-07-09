@@ -8,7 +8,9 @@ module Recents
   # Generate change information for all markdown pages
   class Generator < Jekyll::Generator
     def generate(site)
-      items = site.collections['notes'].docs
+      all_notes = site.collections['notes'].docs
+      project_docs = site.collections['docs'].docs
+      items = all_notes + project_docs
       items.each do |page|
         timestamp = Jekyll::LastModifiedAt::Determinator.new(site.source, page.path, '%FT%T%:z').to_s
         page.data['last_modified_at_timestamp'] = timestamp

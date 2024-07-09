@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Epic One
 toc: true
 permalink: /docs/backlog/epic/1

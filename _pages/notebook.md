@@ -1,8 +1,7 @@
 ---
-layout: notebook
 title: syncopated notes
 id: notebook
-permalink: /notebook
+permalink: /notebook/
 ---
 
 # Welcome! 🌱

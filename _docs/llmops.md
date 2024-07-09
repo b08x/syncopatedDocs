@@ -1,7 +1,6 @@
 ---
-layout: page
 title: Fundamental Qualifier
-permalink: /
+permalink: /llmops/
 ---
 
 [notebook][6e568902]

@@ -9,6 +9,7 @@ body {
   color: hsl(0, 0%, 20%);
   font-size: 1rem;
   max-width: 63em;
+  background-color: #692b2b;
 }
 @media (min-width: 820px) {
   body {

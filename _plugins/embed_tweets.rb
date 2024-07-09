@@ -3,9 +3,10 @@ class TweetEmbedGenerator < Jekyll::Generator
   def generate(site)
     return if !site.config["embed_tweets"]
 
+    all_project_docs = site.collections['docs'].docs
     all_notes = site.collections['notes'].docs
     all_pages = site.pages
-    all_docs = all_notes + all_pages
+    all_docs = all_project_docs + all_notes + all_pages
 
     all_docs.each do |current_note|
       current_note.content.gsub!(

@@ -8,6 +8,10 @@ Jekyll::Hooks.register [:notes], :post_convert do |doc|
   convert_links(doc)
 end
 
+Jekyll::Hooks.register [:docs], :post_convert do |doc|
+  convert_links(doc)
+end
+
 Jekyll::Hooks.register [:pages], :post_convert do |doc|
   # jekyll considers anything at the root as a page,
   # we only want to consider actual pages

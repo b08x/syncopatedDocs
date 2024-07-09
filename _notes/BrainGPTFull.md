@@ -1,5 +1,4 @@
 ---
-layout: note
 title: "BrainGPT - Full"
 category: null
 tags: [llm, prompts]

@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Backlog
 toc: true
 permalink: /docs/backlog
