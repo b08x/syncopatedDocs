@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Material Jekyll Theme
+title: Fundamental Qualifier
 permalink: /
 ---
 
-# Welcome to MkDocs Jekyll
+# Ideally, the First Words That Caught Your Attention
 
-This is a starter template for a mkdocs jekyll theme.
+Otherwise, a lot of these theories would be called into question.
 
-![assets/img/macbook-preview.png](assets/img/macbook-preview.png)
+![assets/img/demo.png](assets/img/demo.png)
 
 ## Purpose
 

@@ -1,0 +1,122 @@
+---
+---
+
+@import "../_sass/fonts.scss";
+
+:root {
+  --font-family-ibm: "IBM Plex Mono", monospace;
+  --font-family-special: "Special Elite", monospace;
+  --font-family-source: "Source Code Pro", monospace;
+  --font-family-source-serif: "Source Code Pro", serif;
+  --font-family-monospace: "Overpass Mono", monospace;
+  --font-family-sans-serif: "Overpass", sans-serif;
+  --font-family-logo: "Podkova", serif;
+  --font-family-text: "mononoki", monospace;
+  --font-family-hack: "Hack", monospace;
+  --font-family-forum: "Forum", serif;
+}
+
+@font-face {
+  font-family: "mononoki";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/fonts/mononoki-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "mononoki";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../assets/fonts/mononoki-BoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "mononoki";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../assets/fonts/mononoki-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "mononoki";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/fonts/mononoki-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Hack";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/fonts/Hack-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Hack";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../assets/fonts/Hack-BoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Hack";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../assets/fonts/Hack-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Hack";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/fonts/Hack-Italic.ttf) format("truetype");
+}
+
+body {
+  font-family: "Hack";
+}
+
+.md-nav  {
+  background-color: inherit;
+}
+
+.md-typeset .codehilite, .md-typeset .highlight {
+  background-color: #1a1a1a;
+}
+
+[data-md-color-primary=grey] .md-typeset a {
+  color: #796fb4;
+}
+
+.md-typeset h4, .md-typeset h5, .md-typeset h6 {
+  color: burlywood;
+}
+
+.dropdown {
+  background-color: #bbbbbb;
+}
+
+.md-typeset code, .md-typeset pre {
+  background-color: black;
+  box-shadow: unset;
+}
+
+em {
+  color: #ab9b63
+}
+
+.md-typeset blockquote {
+  font-style: italic;
+}
+
+[data-md-color-primary=orange] .md-header, [data-md-color-primary=orange] .md-hero {
+  background-color: black;
+}

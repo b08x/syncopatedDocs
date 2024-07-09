@@ -14,29 +14,38 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: MkDocs Documentation Jekyll
-email: your-email@domain.com
-author: Dinosaur Avocado
+title: LLMops
+email: rwpannick@gmail.com
+author: Robert Pannick
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I guess this time, it'll be about a game changing ansible collection based on the idea of love and stacks of docker containers.
 
 # DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
-baseurl: "/mkdocs-jekyll" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 
 # This is mostly for testing
-url: "https://vsoch.github.io" # the base hostname & protocol for your site
+url: "https://b08x.github.io" # the base hostname & protocol for your site
+
+plugins:
+  - jekyll-last-modified-at
+  - jekyll-jupyter-notebook
+  - jekyll_asciinema
+  - jekyll-spaceship
+  - jekyll_picture_tag
+  - jekyll-toc
+  - jekyll-paginate-v2
+  - jekyll-feed
+  - jekyll-pandoc
 
 # Social (First three Required)
-repo: "https://github.com/vsoch/mkdocs-jekyll"
-github_user: "vsoch"
-github_repo: "mkdocs-jekyll"
+repo: "https://github.com/b08x/syncopatedDocs"
+github_user: "b08x"
+github_repo: "syncopatedDocs"
 
 # Optional
-twitter: vsoch
-linkedin: vsochat
-dockerhub: vanessa
+twitter: b08x2
+linkedin: rwpannick
+dockerhub: b08x
 # google-analytics: G-XXXXXXXXXX
 # Image and (square) dimension for logo (don't start with /)
 # If commented, will use material hat theme
@@ -49,24 +58,37 @@ markdown: kramdown
 
 # If you add tags to pages, you can link them to some external search
 # If you want to disable this, comment the URL.
-tag_search_endpoint: https://ask.cyberinfrastructure.org/search?q=
+#tag_search_endpoint: https://ask.cyberinfrastructure.org/search?q=
 tag_color: danger # danger, success, warning, primary, info, secondary
 
 # Add a page at /forum to list a set of discourse topics. The site needs
 # to enable "embed topics" setting
 # https://meta.discourse.org/t/embedding-a-list-of-discourse-topics-in-another-site/125911
-discourse_site: "https://ask.cyberinfrastructure.org" 
-discourse_per_page: 10
-discourse_category: "stanford-research-computing"
-discourse_tags: null # comma separated string, leave null to not filter
+# discourse_site: "https://ask.cyberinfrastructure.org"
+# discourse_per_page: 10
+# discourse_category: "stanford-research-computing"
+# discourse_tags: null # comma separated string, leave null to not filter
 
-accentColor: red # purple, green, etc.
-themeColor: red # purple, green, blue, orange, purple, grey
+accentColor: orange # purple, green, etc.
+themeColor: orange # purple, green, blue, orange, purple, grey
 fixedNav: 'true' # true or false
 
 permalink: /:year/:title/
 markdown: kramdown
 exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor]
+
+jekyll-spaceship:
+  mermaid-processor:
+    css:
+      class: "mermaid!"
+    config:
+      theme: dark
+
+picture:
+  source: "assets/img"
+  output: "assets/img/generated"
+  suppress_warnings: true
+  nomarkdown: false
 
 # Collections
 collections:
