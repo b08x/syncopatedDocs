@@ -85,3 +85,35 @@
   font-display: swap;
   src: url(../assets/fonts/mononoki-Italic.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: "Hack";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/fonts/Hack-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Hack";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../assets/fonts/Hack-BoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Hack";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../assets/fonts/Hack-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Hack";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/fonts/Hack-Italic.ttf) format("truetype");
+}

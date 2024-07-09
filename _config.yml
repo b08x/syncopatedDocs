@@ -22,7 +22,7 @@ description: > # this means to ignore newlines until "baseurl:"
 
 # DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
 baseurl: "" # the subpath of your site, e.g. /blog
-
+logo: "assets/img/image305.jpeg"
 # This is mostly for testing
 url: "https://b08x.github.io" # the base hostname & protocol for your site
 
@@ -36,6 +36,19 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-feed
   - jekyll-pandoc
+
+# If you are using a host that cannot resolve URLs that do
+# not end with .html (such as Neocities), set this to 'true'.
+use_html_extension:  false
+
+# Set to `true` to open non-internal links in new tabs, or
+# set to `false` to open non-internal links in current tab.
+open_external_links_in_new_tab: true
+
+# Set to `true` to replace tweet URLs with Twitter embeds.
+# Note that doing so will negatively the reader's privacy
+# as their browser will communicate with Twitter's servers.
+embed_tweets: false
 
 # Social (First three Required)
 repo: "https://github.com/b08x/syncopatedDocs"
@@ -75,7 +88,21 @@ fixedNav: 'true' # true or false
 
 permalink: /:year/:title/
 markdown: kramdown
-exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor]
+include:
+  - "_notes/"
+  - "_pages"
+  - "_posts"
+exclude:
+  - "CHANGELOG.md"
+  - "LICENSE"
+  - "README.md"
+  - "_drafts/"
+  - "_includes/notes_graph.json"
+  - "_site"
+  - "about.og"
+  - "plugins/"
+  - "vendor"
+  - "websitestuff/"
 
 jekyll-spaceship:
   mermaid-processor:
@@ -95,6 +122,9 @@ collections:
   docs:
     output: true
     permalink: /:collection/:path
+  notes:
+    output: true
+    permalink: /:slug
 
 # Defaults
 defaults:
@@ -111,7 +141,12 @@ defaults:
       layout: "page"
   -
     scope:
-      path: "posts"
+      path: "_posts"
       type: "posts"
     values:
       layout: "post"
+  -
+    scope:
+      path: "_notes/**/*.md"
+    values:
+      layout: "notebook/note"

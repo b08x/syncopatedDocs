@@ -1,12 +1,13 @@
-- title: "Getting Started"
-  url: "docs/getting-started"
+- title: "Setup"
+  url: "docs/setup"
   children:
-    - title: Features
-      url: "docs/getting-started#getting-started"
-    - title: Development
-      url: "docs/getting-started#development"
-    - title: Customization
-      url: "docs/getting-started#customization"
+    - title: Setting Variables
+      url: "docs/setup/variables"
+- title: "Backlog"
+  url: "docs/backlog"
+  children:
+    - title: Epic I
+      url: "docs/backlog/epic/1"
 - title: "Extras"
   url: "docs/extras"
   children:
