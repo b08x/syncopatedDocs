@@ -1,14 +1,11 @@
-- title: "LLMops"
-  url: "docs/llmops"
+- title: Index
+  url: "docs/index"
   children:
-    - title: Setting Variables
-      url: "docs/setup/variables"
-- title: "Backlog"
+    - title: LLMops
+      url: "docs/llmops"
+- title: Backlog
   url: "docs/backlog"
-  children:
-    - title: Epic I
-      url: "docs/backlog/epic/1"
-- title: "Extras"
+- title: Extras
   url: "docs/extras"
   children:
     - title: Quizzes
@@ -17,7 +14,7 @@
       url: "forum"
     - title: Interactive Code
       url: "docs/extras/interactive"
-- title: "About"
+- title: About
   url: "about"
-- title: "News"
+- title: News
   url: "news"

@@ -1,4 +1,5 @@
 ---
+layout: docs
 title: Discussion Forum
 permalink: /forum/
 ---

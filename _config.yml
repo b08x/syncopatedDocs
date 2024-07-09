@@ -92,7 +92,6 @@ include:
   - "_notes/"
   - "_pages/"
   - "_posts/"
-  - "_projects/"
 exclude:
   - "CHANGELOG.md"
   - "LICENSE"
@@ -143,6 +142,11 @@ defaults:
     scope:
       path: "_pages/*.md"
       type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "_pages/projects/**/*.md"
     values:
       layout: "page"
   -

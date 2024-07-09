@@ -3,4 +3,8 @@ title: Fundamental Qualifier
 permalink: /projects/
 ---
 
-[llmops](/llmops)
+# Ideally, the First Words That Caught Your Attention
+
+Otherwise, a lot of these theories would be called into question.
+
+[[llmops]]

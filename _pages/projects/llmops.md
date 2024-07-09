@@ -1,15 +1,13 @@
 ---
-title: Fundamental Qualifier
-permalink: /llmops/
+title: llmops
+toc: true
+permalink: /projects/llmops/
 ---
 
-[notebook][6e568902]
+# Ansible Collection - LLMops
 
-  [6e568902]: /notebook "notebook"
-
-# Ideally, the First Words That Caught Your Attention
-
-Otherwise, a lot of these theories would be called into question.
+[[notebook]]
+[[backlog]]
 
 ```
 1. Overall Structure:

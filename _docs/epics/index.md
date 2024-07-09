@@ -1,7 +1,7 @@
 ---
 title: Epic One
 toc: true
-permalink: /docs/backlog/epic/1
+permalink: /docs/epics/
 ---
 
 
