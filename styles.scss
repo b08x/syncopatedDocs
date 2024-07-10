@@ -2,7 +2,7 @@
 ---
 
 @import "../_sass/fonts.scss";
-@import "../_sass/code.scss";
+@import "../_sass/highlighter.scss";
 @import "../_sass/normalize.scss";
 
 :root {
@@ -48,6 +48,7 @@ body {
   font-family: (var(--font-family-special));
   font-size: 2.5em;
   font-weight: 600;
+  color: black;
 }
 
 .md-typeset h2 {
@@ -95,7 +96,7 @@ em {
 
 
 [data-md-color-primary=orange] .md-typeset a {
-  color: #ffab00;
+  color: black;
   text-decoration: underline;
 }
 

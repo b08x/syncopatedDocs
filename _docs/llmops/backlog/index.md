@@ -1,7 +1,7 @@
 ---
 title: Backlog
 toc: true
-permalink: /docs/backlog
+permalink: /docs/llmops/backlog
 ---
 
 

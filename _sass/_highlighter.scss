@@ -1,11 +1,12 @@
 .highlight  {
-  background: #f8f8f8;
+  background: transparent;
   padding: 1px 1em;
   border-radius: 3px;
   font-size: 1em;
   font-size: 0.9em;
   overflow: auto;
   margin: 1em -1em;
+  text-wrap: pretty;
   code{
     padding: 0;
   }
@@ -61,7 +62,7 @@ div.highlight {
 .highlight .sb { color: #d14 } /* Literal.String.Backtick */
 .highlight .sc { color: #d14 } /* Literal.String.Char */
 .highlight .sd { color: #d14 } /* Literal.String.Doc */
-.highlight .s2 { color: #d14 } /* Literal.String.Double */
+.highlight .s2 { color: darkgoldenrod } /* Literal.String.Double */
 .highlight .se { color: #d14 } /* Literal.String.Escape */
 .highlight .sh { color: #d14 } /* Literal.String.Heredoc */
 .highlight .si { color: #d14 } /* Literal.String.Interpol */

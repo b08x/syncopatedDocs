@@ -1,10 +1,10 @@
 - title: Index
   url: "docs/index"
+- title: LLMops
+  url: "docs/llmops"
   children:
-    - title: LLMops
-      url: "docs/llmops"
-- title: Backlog
-  url: "docs/backlog"
+    - title: Backlog
+      url: "docs/llmops/backlog"
 - title: Extras
   url: "docs/extras"
   children:

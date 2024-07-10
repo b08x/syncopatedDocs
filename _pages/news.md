@@ -15,9 +15,13 @@ For site changes, see the <a href="https://github.com/{{ site.github_user }}/{{ 
    <div class="post-preview">
    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
    <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span><br>
-   {% if post.badges %}{% for badge in post.badges %}<span class="badge badge-{{ badge.type }}">{{ badge.tag }}</span>{% endfor %}{% endif %}
-   {{ post.content | split:'<!--more-->' | first }}
-   {% if post.content contains '<!--more-->' %}
+   {% if post.badges %}
+   {% for badge in post.badges %}
+   <span class="badge badge-{{ badge.type }}">{{ badge.tag }}</span>
+   {% endfor %}
+   {% endif %}
+   {{ post.excerpt | split:'<!--more-->' | first }}
+   {% if post.excerpt contains '<!--more-->' %}
       <a href="{{ site.baseurl }}{{ post.url }}">read more</a>
    {% endif %}
    </div>
