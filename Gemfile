@@ -23,4 +23,5 @@ group :jekyll_plugins do
   gem 'jekyll-spaceship'
   gem 'jekyll-toc'
   gem 'jekyll-react-player'
+  gem 'jekyll-responsive-image'
 end

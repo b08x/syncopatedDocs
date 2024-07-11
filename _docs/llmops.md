@@ -1,13 +1,10 @@
 ---
-title: llmops
-toc: true
-permalink: /docs/llmops/
+title: LLMOps
 ---
 
-Here it is; a description....
+# about
 
 
-[[backlog]]
 
 ``` mermaid!
 gantt
@@ -51,7 +48,7 @@ Community Building: 2024-10-30, 2024-11-06
 
 Based on the information provided and the context of creating an LLMOps stack using Ansible, here's a backlog for creating the Ansible roles, playbooks, and strategies for handling Docker and KVM virtual deployments:
 
-## Backlog Items
+## Backlog
 
 1.  **Core Infrastructure Setup**
     - Create a base role for common system configurations

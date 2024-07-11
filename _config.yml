@@ -37,6 +37,7 @@ plugins:
   - jekyll-feed
   - jekyll-pandoc
   - jekyll-react-player
+  - jekyll-responsive-image
 
 # If you are using a host that cannot resolve URLs that do
 # not end with .html (such as Neocities), set this to 'true'.
@@ -73,7 +74,7 @@ markdown: kramdown
 # If you add tags to pages, you can link them to some external search
 # If you want to disable this, comment the URL.
 #tag_search_endpoint: https://ask.cyberinfrastructure.org/search?q=
-tag_color: danger # danger, success, warning, primary, info, secondary
+tag_color: info # danger, success, warning, primary, info, secondary
 
 # Add a page at /forum to list a set of discourse topics. The site needs
 # to enable "embed topics" setting
@@ -85,7 +86,7 @@ tag_color: danger # danger, success, warning, primary, info, secondary
 
 accentColor: orange # purple, green, etc.
 themeColor: orange # purple, green, blue, orange, purple, grey
-fixedNav: 'true' # true or false
+fixedNav: 'false' # true or false
 
 permalink: /:year/:title/
 markdown: kramdown
@@ -117,6 +118,14 @@ picture:
   output: "assets/img/generated"
   suppress_warnings: true
   nomarkdown: false
+
+responsive_image:
+  default_quality: 90
+  template: _includes/imager-js.html
+  sizes:
+    - width: 480
+    - width: 800
+    - width: 1400
 
 # Collections
 collections:

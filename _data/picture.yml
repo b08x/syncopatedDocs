@@ -11,6 +11,7 @@ presets:
   # This entry is purely an example. It is not the default JPT preset, nor is it available as a
   # built-in.
   default:
+    markup: img
     formats: [webp, original] # Order matters!
     widths: [200, 400, 800, 1200, 1600] # Image widths, in pixels.
 
@@ -35,7 +36,7 @@ presets:
     # Size is unconditional; provided either after all conditional sizes (above) or alone. If you
     # only have a 'size' (no 'sizes'), and it's a constant (px, em, or rem), you should use a
     # pixel-ratio srcset.
-    size: 800px
+    size: calc(100vw - 18px)
 
     link_source: true # wrap images in a link to the original source image.
     dimension_attributes: true # Page reflow begone!
@@ -46,7 +47,6 @@ presets:
       parent: 'data-downloadable="true"'
       picture: 'class="awesome" data-volume="11"'
       img: 'class="her-class"'
-      a: 'class="image-link"'
 
   # You can use this as jpt-webp. All following presets follow the same pattern.
   webp:
