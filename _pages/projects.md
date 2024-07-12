@@ -7,4 +7,4 @@ permalink: /projects/
 
 Otherwise, a lot of these theories would be called into question.
 
-[[llmops]]
+[[flowbots]]

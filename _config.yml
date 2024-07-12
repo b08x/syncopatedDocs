@@ -94,6 +94,7 @@ include:
   - "_notes/"
   - "_pages/"
   - "_posts/"
+  - "_projects/"
 exclude:
   - "CHANGELOG.md"
   - "LICENSE"
@@ -135,6 +136,9 @@ collections:
   notes:
     output: true
     permalink: /:collection/:path
+  projects:
+    output: true
+    permalink: /:collection/:path
 
 # Defaults
 defaults:
@@ -148,6 +152,12 @@ defaults:
       type: "docs"
     values:
       layout: "docs"
+  -
+    scope:
+      path: "_projects/**/*.md"
+      type: "projects"
+    values:
+      layout: "project"
   -
     scope:
       path: "_pages/*.md"

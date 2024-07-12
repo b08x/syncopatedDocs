@@ -1,5 +1,7 @@
 ---
 title: Testing this
+vimeoId: 957842204
+date modified: "Thursday, July 11th 2024, 2:58:50 am"
 ---
 
 > [!info]
@@ -12,6 +14,18 @@ title: Testing this
 {% reactplayer https://www.youtube.com/watch?v=ly1Y0xw3d3I %}
 
 ---
+
+
+{% reactplayer https://player.vimeo.com/video/957842204 %}
+
+---
+
+{% include embed/vimeoPlayer.html id=page.vimeoId %}
+
+---
+
+
+
 
 ### jekyll-responsive-image
 
@@ -29,3 +43,7 @@ title: Testing this
 ### markdown format
 
 ![](../../../assets/img/demo.png)
+
+---
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/957842204?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="testing_sarcastic_sentiment_dify"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>

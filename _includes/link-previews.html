@@ -1,8 +1,9 @@
 <!-- That file is not particularly elegant. This will need a refactor at some point. -->
 <style>
   content a.internal-link {
-    border-color: #8b88e6;
-    background-color: #efefff;
+    border-color: black;
+    background-color: #514778;
+    border: thin;
   }
 
   #tooltip-wrapper {
@@ -82,7 +83,7 @@
           setTimeout(function() {
             tooltipWrapper.style.opacity = 1;
           }, 1)
-        } 
+        }
       } else {
         tooltipContent.innerHTML = linkHistories[event.target.href]
         tooltipWrapper.style.display = 'block';
